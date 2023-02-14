@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    /* cores */
+    --cor-principal: #FFFFFF;
+    --cor-secundaria: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+
+    /* fontes */
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--cor-principal);
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+}
+
+.principal {
+    background-image: url("../img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+a {
+    padding: 1em;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    text-align: center;
+}
+
+.principal__caixa {
+    margin: 0 3em;
+}
+
+
+.principal__titulo {
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+.principal__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.principal__botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 1em;
+}
+
+.principal__botoes__combo {
+    background-color: var(--botao-azul);
+    color: var(--cor-principal);
+}
+
+.principal__botoes__aluraplus {
+    color: var(--cor-principal);
+    border: 1px solid var(--cor-principal);
+}
+
+.principal__descricao {
+    font-size: 0.75rem;
+    color: var(--cor-secundaria);
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 9em;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario__descricao {
+    text-align: left;
+}
+
+.secundario__titulo {
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--cor-principal);
+    margin-bottom: 0.2em;
+}
+
+.secundario__texto {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--cor-secundaria);
+}
+
+.terciario {
+    margin: 0 7em;
+
+}
+
+.terciario__caixa {
+    text-align: left;
+    align-items: left;
+}
+
+.terciario__texto {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--cor-secundaria);
+    margin-bottom: 2em;
+}
+
+.terciario__botao {
+    background-color: var(--botao-azul);
+    color: var(--cor-principal);
+}
+
+.terciario__imagem {
+    width: 80%;
+    margin-left: 5em;
+}
+
+.dispositivos {
+    margin: 0 5em;
+}
+
+.dispositivos__titulo {
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--cor-principal);
+    margin-bottom: 0.2em;
+}
+
+.dispositivos__caixa {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 7em 11em 7em;
+}
+
+.dispositivos__descricao {
+    text-align: center;
+    font-size: 2rem;
+}  
+
+.rodape {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 2em 0 1em 0;
+}
+
+.lista__link a {
+    color: var(--cor-principal);
+}
+
+.rodape__descricao p {
+    color: var(--cor-secundaria);
+    font-size: 0.9rem;
+    margin: 0 10em 1em 10em;
+}
+
